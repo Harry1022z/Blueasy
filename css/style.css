@@ -418,7 +418,7 @@ footer a {
     .logo {
         font-size: 26px;
         font-weight: 700;
-        margin-left: 240px;
+        translate: 40px;
     }
 
     .cards {
@@ -459,7 +459,7 @@ footer a {
     }
 
     section .nav2 {
-        align-items: center;
+        align-items: center;    
     }
 
     .gallery {
@@ -477,6 +477,7 @@ footer a {
     .photoGraph {
         grid-template-columns: 1fr;
         padding: 1rem;
+        background-position: center;
     }
 
     .photoGraph .f1,
@@ -557,6 +558,14 @@ footer a {
         font-size: 1.3rem;
     }
 
+    .contact {
+        background-image: url(../images/bg_contact.png);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 30px;
+    }
+
     footer a {
         margin-left: 10px;
         color: #797e84;
@@ -567,5 +576,110 @@ footer a {
     .year {
         transform: none;
         text-align: center;
+    }
+}
+/* Media Queries for Different Devices */
+
+/* Large screens, such as TVs and large monitors */
+@media (min-width: 1200px) {
+    .header {
+        height: 100vh;
+    }
+    .logo {
+        font-size: 32px;
+        margin-left: 320px;
+    }
+    .menu a {
+        font-size: 1.2rem;
+    }
+    .header-text .quote {
+        font-size: 3rem;
+    }
+    .portfolio {
+        font-size: 40px;
+    }
+    .twit1 p {
+        font-size: 24px;
+    }
+    .contact h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium screens, such as laptops and desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header {
+        height: 90vh;
+    }
+    .logo {
+        font-size: 28px;
+        margin-left: 280px;
+    }
+    .menu a {
+        font-size: 1.1rem;
+    }
+    .header-text .quote {
+        font-size: 2.8rem;
+    }
+    .portfolio {
+        font-size: 38px;
+    }
+    .twit1 p {
+        font-size: 22px;
+    }
+    .contact h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Small screens, such as tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header {
+        height: 80vh;
+    }
+    .logo {
+        font-size: 26px;
+        margin-left: 240px;
+    }
+    .menu a {
+        font-size: 1rem;
+    }
+    .header-text .quote {
+        font-size: 2.5rem;
+    }
+    .portfolio {
+        font-size: 35px;
+    }
+    .twit1 p {
+        font-size: 20px;
+    }
+    .contact h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Extra small screens, such as phones */
+@media (max-width: 767px) {
+    .header {
+        height: 70vh;
+    }
+    .logo {
+        font-size: 24px;
+        margin-left: 200px;
+    }
+    .menu a {
+        font-size: 0.9rem;
+    }
+    .header-text .quote {
+        font-size: 2rem;
+    }
+    .portfolio {
+        font-size: 30px;
+    }
+    .twit1 p {
+        font-size: 18px;
+    }
+    .contact h3 {
+        font-size: 1.2rem;
     }
 }
