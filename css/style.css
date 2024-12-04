@@ -16,7 +16,7 @@ body {
     height: 80vh;
     position: relative;
     color: white;
-    overflow: hidden; /* Evita desbordes */
+    overflow: hidden;
 }
 
 .overlay {
@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 2rem; /* Aumenta el padding para hacer el contenedor más largo */
+    padding: 2rem 2rem;
     background-color: #44515ad0;
     flex-wrap: wrap;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 .highlight {
-    color: #00A4E4; /* Solo la "E" en azul */
+    color: #00A4E4;
 }
 
 .menu a {
@@ -53,7 +53,7 @@ body {
     margin: 0.5rem 1rem;
     font-weight: 400;
     padding: 0.2rem 0.5rem;
-    transition: color 0.3s, border 0.3s; /* Añade una transición suave */
+    transition: color 0.3s, border 0.3s;
 }
 
 .menu a.active {
@@ -104,8 +104,8 @@ body {
 /* Portfolio */
 .nav2 {
     display: flex;
-    justify-content: flex-end; /* Alinea los elementos hacia la derecha */
-    padding-right: 20px; /* Ajusta el espacio desde el borde derecho */
+    justify-content: flex-end;
+    padding-right: 20px;
     translate: 0px 50px;
 }
 
@@ -115,10 +115,9 @@ body {
     text-decoration: none;
 }
 .a {
-    position: relative; /* Permite usar top y left */
-     /* Mueve el contenedor a la izquierda */
-    top: 10px; /* Ajusta este valor para moverlo hacia abajo */
-    margin-right: 100px; /* Ajusta este valor para el margen izquierdo */
+    position: relative; 
+    top: 10px;
+    margin-right: 100px;
 }
 .a .nav2Link {
     color: #00ADEF;
@@ -134,8 +133,8 @@ body {
     border-radius: 2px;
     margin-top: 40px;
     translate: -770px -30px;
-    transform: none; /* Elimina el desplazamiento horizontal */
-    width: 80px; /* Ajusta el ancho automáticamente */
+    transform: none;
+    width: 80px;
     color: #6e7175;
 }
 
@@ -435,14 +434,14 @@ footer a {
     .nav2 {
         grid-template-columns: 1fr;
         margin: 1rem;
-        gap: 5px; /* Reduce el espacio entre elementos */
+        gap: 5px;
     }
 
     .a .nav2Link {
         display: block;
         width: 30%;
         text-align: center;
-        margin: 0.5rem 0; /* Asegura que los enlaces no se apeñusquen */
+        margin: 0.5rem 0;
         translate: 150px -30px;
     }
 
@@ -578,9 +577,6 @@ footer a {
         text-align: center;
     }
 }
-/* Media Queries for Different Devices */
-
-/* Large screens, such as TVs and large monitors */
 @media (min-width: 1200px) {
     .header {
         height: 100vh;
@@ -606,7 +602,6 @@ footer a {
     }
 }
 
-/* Medium screens, such as laptops and desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
     .header {
         height: 90vh;
@@ -632,7 +627,6 @@ footer a {
     }
 }
 
-/* Small screens, such as tablets */
 @media (min-width: 768px) and (max-width: 991px) {
     .header {
         height: 80vh;
@@ -658,7 +652,6 @@ footer a {
     }
 }
 
-/* Extra small screens, such as phones */
 @media (max-width: 767px) {
     .header {
         height: 70vh;
